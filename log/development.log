@@ -1,0 +1,1878 @@
+
+
+Started GET "/" for ::1 at 2016-05-02 09:55:24 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.0ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (137.2ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (285.6ms)
+
+
+Started GET "/characteers" for ::1 at 2016-05-02 09:55:37 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.1ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.0ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.1ms)
+
+
+Started GET "/characters" for ::1 at 2016-05-02 09:55:42 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.1ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.4ms)
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCharacters (20160502135954)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160502135954"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (13.8ms)[0m  DELETE FROM "characters"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (17.8ms)[0m  DELETE FROM "characters"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM "characters"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (22.9ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1], ["name", "bob"], ["gender", "male"], ["created_at", "2016-05-02 14:07:53.505361"], ["updated_at", "2016-05-02 14:07:53.505361"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 2], ["name", "deb"], ["gender", "female"], ["created_at", "2016-05-02 14:07:53.522518"], ["updated_at", "2016-05-02 14:07:53.522518"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+
+
+Started GET "/characters" for ::1 at 2016-05-02 10:12:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/characters"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.2ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (29.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (157.1ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (159.7ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (287.0ms)
+
+
+Started GET "/characters" for ::1 at 2016-05-02 10:13:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/characters"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.1ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.0ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.9ms)
+
+
+Started GET "/character" for ::1 at 2016-05-02 10:13:18 -0400
+Processing by CharactersController#index as HTML
+  [1m[35mCharacter Load (49.3ms)[0m  SELECT "characters".* FROM "characters"
+Completed 200 OK in 113ms (Views: 30.9ms | ActiveRecord: 49.7ms)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (24.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseTokenAuthCreateUsers (20160502142544)
+  [1m[35m (0.2ms)[0m  begin transaction
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/mal/Desktop/mal-test-box/p3/Mob-maker/db/migrate/20160502142544_devise_token_auth_create_users.rb:45)
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar DEFAULT 'email' NOT NULL, "uid" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "name" varchar, "nickname" varchar, "image" varchar, "email" varchar, "tokens" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mCREATE  INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_uid_and_provider" ON "users" ("uid", "provider")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160502142544"]]
+  [1m[35m (29.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (17.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (18.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (13.7ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.8ms)[0m  INSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1], ["name", "anibal.stroman"], ["gender", "male"], ["created_at", "2016-05-02 15:19:05.937096"], ["updated_at", "2016-05-02 15:19:05.937096"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "dante_lehner"], ["gender", "male"], ["created_at", "2016-05-02 15:19:05.977581"], ["updated_at", "2016-05-02 15:19:05.977581"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started GET "/" for ::1 at 2016-05-02 11:20:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (8.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/mal/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 186ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/character" for ::1 at 2016-05-02 11:20:12 -0400
+Processing by CharactersController#index as HTML
+  [1m[35mCharacter Load (5.5ms)[0m  SELECT "characters".* FROM "characters"
+Completed 200 OK in 26ms (Views: 4.6ms | ActiveRecord: 5.8ms)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (18.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.5ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.7ms)[0m  INSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1], ["name", "kristina_feeney"], ["gender", "male"], ["created_at", "2016-05-02 15:21:13.656172"], ["updated_at", "2016-05-02 15:21:13.656172"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "ottilie.metz"], ["gender", "male"], ["created_at", "2016-05-02 15:21:13.718382"], ["updated_at", "2016-05-02 15:21:13.718382"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (17.9ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (16.2ms)[0m  INSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1], ["name", "estell"], ["gender", "male"], ["created_at", "2016-05-02 15:21:36.101621"], ["updated_at", "2016-05-02 15:21:36.101621"]]
+  [1m[36m (12.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "baron.hintz"], ["gender", "male"], ["created_at", "2016-05-02 15:21:36.147352"], ["updated_at", "2016-05-02 15:21:36.147352"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started GET "/character" for ::1 at 2016-05-02 11:21:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (19.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CharactersController#index as HTML
+  [1m[35mCharacter Load (0.2ms)[0m  SELECT "characters".* FROM "characters"
+Completed 200 OK in 42ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/character" for ::1 at 2016-05-02 11:21:49 -0400
+Processing by CharactersController#index as HTML
+  [1m[36mCharacter Load (0.1ms)[0m  [1mSELECT "characters".* FROM "characters"[0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (19.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (16.2ms)[0m  INSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1], ["name", "merlin"], ["gender", "male"], ["created_at", "2016-05-02 15:23:06.396068"], ["updated_at", "2016-05-02 15:23:06.396068"]]
+  [1m[36m (12.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "jalen.pollich"], ["gender", "male"], ["created_at", "2016-05-02 15:23:06.485898"], ["updated_at", "2016-05-02 15:23:06.485898"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (17.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (13.8ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (16.1ms)[0m  INSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 2], ["name", "reva"], ["gender", "male"], ["created_at", "2016-05-02 15:25:25.760119"], ["updated_at", "2016-05-02 15:25:25.760119"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 5], ["name", "dominic_jakubowski"], ["gender", "male"], ["created_at", "2016-05-02 15:25:25.805523"], ["updated_at", "2016-05-02 15:25:25.805523"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 6], ["name", "hermann"], ["gender", "male"], ["created_at", "2016-05-02 15:25:25.808610"], ["updated_at", "2016-05-02 15:25:25.808610"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 9], ["name", "josefina_bahringer"], ["gender", "male"], ["created_at", "2016-05-02 15:25:25.811867"], ["updated_at", "2016-05-02 15:25:25.811867"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "characters" ("id", "name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 9], ["name", "linnea"], ["gender", "male"], ["created_at", "2016-05-02 15:25:25.814479"], ["updated_at", "2016-05-02 15:25:25.814479"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started GET "/character" for ::1 at 2016-05-02 11:25:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (41.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CharactersController#index as HTML
+  [1m[35mCharacter Load (5.1ms)[0m  SELECT "characters".* FROM "characters"
+Completed 200 OK in 60ms (Views: 6.8ms | ActiveRecord: 5.6ms)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (13.9ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.9ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "steve"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.097586"], ["updated_at", "2016-05-02 15:26:29.097586"]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "alana_christiansen"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.137973"], ["updated_at", "2016-05-02 15:26:29.137973"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "cade"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.141104"], ["updated_at", "2016-05-02 15:26:29.141104"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "christy.kunze"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.143788"], ["updated_at", "2016-05-02 15:26:29.143788"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "loy"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.148070"], ["updated_at", "2016-05-02 15:26:29.148070"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "gabrielle"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.150557"], ["updated_at", "2016-05-02 15:26:29.150557"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "uriah"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.153095"], ["updated_at", "2016-05-02 15:26:29.153095"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "cecilia"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.155631"], ["updated_at", "2016-05-02 15:26:29.155631"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "edyth.bernhard"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.158132"], ["updated_at", "2016-05-02 15:26:29.158132"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "kaya"], ["gender", "male"], ["created_at", "2016-05-02 15:26:29.160409"], ["updated_at", "2016-05-02 15:26:29.160409"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started GET "/character" for ::1 at 2016-05-02 11:26:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (29.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CharactersController#index as HTML
+  [1m[35mCharacter Load (4.8ms)[0m  SELECT "characters".* FROM "characters"
+Completed 200 OK in 41ms (Views: 8.4ms | ActiveRecord: 5.2ms)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.4ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (16.1ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "derek.jones"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.368574"], ["updated_at", "2016-05-02 15:27:38.368574"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "carli"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.409140"], ["updated_at", "2016-05-02 15:27:38.409140"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "kennedi"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.412557"], ["updated_at", "2016-05-02 15:27:38.412557"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "judson_wyman"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.416308"], ["updated_at", "2016-05-02 15:27:38.416308"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "catharine"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.419102"], ["updated_at", "2016-05-02 15:27:38.419102"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "mathilde.monahan"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.421453"], ["updated_at", "2016-05-02 15:27:38.421453"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "alexandro_monahan"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.423989"], ["updated_at", "2016-05-02 15:27:38.423989"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "gabriel"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.426374"], ["updated_at", "2016-05-02 15:27:38.426374"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "curtis.lang"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.429166"], ["updated_at", "2016-05-02 15:27:38.429166"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "wanda_mccullough"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.431973"], ["updated_at", "2016-05-02 15:27:38.431973"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "eric"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.434745"], ["updated_at", "2016-05-02 15:27:38.434745"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "laron"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.437522"], ["updated_at", "2016-05-02 15:27:38.437522"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ernestina.wiza"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.440214"], ["updated_at", "2016-05-02 15:27:38.440214"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "eugenia"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.442552"], ["updated_at", "2016-05-02 15:27:38.442552"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "henderson"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.445343"], ["updated_at", "2016-05-02 15:27:38.445343"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "gertrude"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.449140"], ["updated_at", "2016-05-02 15:27:38.449140"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "fletcher.stanton"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.452982"], ["updated_at", "2016-05-02 15:27:38.452982"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "mac.feil"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.456000"], ["updated_at", "2016-05-02 15:27:38.456000"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "buck.bahringer"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.459252"], ["updated_at", "2016-05-02 15:27:38.459252"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "vaughn_howell"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.463365"], ["updated_at", "2016-05-02 15:27:38.463365"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "petra"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.466670"], ["updated_at", "2016-05-02 15:27:38.466670"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "beulah"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.470270"], ["updated_at", "2016-05-02 15:27:38.470270"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "chanelle"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.473579"], ["updated_at", "2016-05-02 15:27:38.473579"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "lynn.heaney"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.476963"], ["updated_at", "2016-05-02 15:27:38.476963"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "frederik"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.480596"], ["updated_at", "2016-05-02 15:27:38.480596"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jakayla"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.484801"], ["updated_at", "2016-05-02 15:27:38.484801"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "cletus"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.487449"], ["updated_at", "2016-05-02 15:27:38.487449"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "mariano"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.490996"], ["updated_at", "2016-05-02 15:27:38.490996"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "stefan.mayert"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.495133"], ["updated_at", "2016-05-02 15:27:38.495133"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "sylvan"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.498134"], ["updated_at", "2016-05-02 15:27:38.498134"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "jillian.emmerich"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.501991"], ["updated_at", "2016-05-02 15:27:38.501991"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "sonia"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.505739"], ["updated_at", "2016-05-02 15:27:38.505739"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "charlene_trantow"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.508907"], ["updated_at", "2016-05-02 15:27:38.508907"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ricky.beahan"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.512731"], ["updated_at", "2016-05-02 15:27:38.512731"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "lora.hegmann"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.516644"], ["updated_at", "2016-05-02 15:27:38.516644"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "santa"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.520550"], ["updated_at", "2016-05-02 15:27:38.520550"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "magdalen"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.525107"], ["updated_at", "2016-05-02 15:27:38.525107"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "hilma.smith"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.528979"], ["updated_at", "2016-05-02 15:27:38.528979"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "armand"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.532634"], ["updated_at", "2016-05-02 15:27:38.532634"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tabitha_friesen"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.536472"], ["updated_at", "2016-05-02 15:27:38.536472"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "dewayne_lynch"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.540734"], ["updated_at", "2016-05-02 15:27:38.540734"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elody.howe"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.543834"], ["updated_at", "2016-05-02 15:27:38.543834"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "abigail_abbott"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.547986"], ["updated_at", "2016-05-02 15:27:38.547986"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "theo"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.552090"], ["updated_at", "2016-05-02 15:27:38.552090"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "jaqueline_hammes"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.555075"], ["updated_at", "2016-05-02 15:27:38.555075"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "luciano"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.558724"], ["updated_at", "2016-05-02 15:27:38.558724"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ethel"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.562610"], ["updated_at", "2016-05-02 15:27:38.562610"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "carmel"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.565921"], ["updated_at", "2016-05-02 15:27:38.565921"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "rusty"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.570125"], ["updated_at", "2016-05-02 15:27:38.570125"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "winifred_lubowitz"], ["gender", "male"], ["created_at", "2016-05-02 15:27:38.574189"], ["updated_at", "2016-05-02 15:27:38.574189"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started GET "/character" for ::1 at 2016-05-02 11:27:52 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CharactersController#index as HTML
+  [1m[35mCharacter Load (0.3ms)[0m  SELECT "characters".* FROM "characters"
+Completed 200 OK in 36ms (Views: 18.2ms | ActiveRecord: 0.5ms)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.4ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "glennie"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.460897"], ["updated_at", "2016-05-02 15:28:37.460897"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "amari_rath"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.478930"], ["updated_at", "2016-05-02 15:28:37.478930"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "precious.klein"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.482013"], ["updated_at", "2016-05-02 15:28:37.482013"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ivory_kiehn"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.485510"], ["updated_at", "2016-05-02 15:28:37.485510"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "reinhold_toy"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.488208"], ["updated_at", "2016-05-02 15:28:37.488208"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "angela.wilkinson"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.490810"], ["updated_at", "2016-05-02 15:28:37.490810"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "stanton"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.493454"], ["updated_at", "2016-05-02 15:28:37.493454"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tate.kunde"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.496040"], ["updated_at", "2016-05-02 15:28:37.496040"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ethelyn"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.498612"], ["updated_at", "2016-05-02 15:28:37.498612"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "alvah"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.500991"], ["updated_at", "2016-05-02 15:28:37.500991"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "leonor"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.503574"], ["updated_at", "2016-05-02 15:28:37.503574"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "alicia"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.506328"], ["updated_at", "2016-05-02 15:28:37.506328"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ben"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.509191"], ["updated_at", "2016-05-02 15:28:37.509191"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "nola"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.511741"], ["updated_at", "2016-05-02 15:28:37.511741"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "kiarra_kshlerin"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.514570"], ["updated_at", "2016-05-02 15:28:37.514570"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "delia_schowalter"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.518172"], ["updated_at", "2016-05-02 15:28:37.518172"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "electa_wunsch"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.521840"], ["updated_at", "2016-05-02 15:28:37.521840"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "amely.dickens"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.524260"], ["updated_at", "2016-05-02 15:28:37.524260"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "jayce.walter"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.527462"], ["updated_at", "2016-05-02 15:28:37.527462"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "carleton"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.531928"], ["updated_at", "2016-05-02 15:28:37.531928"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "aniyah_gerhold"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.535078"], ["updated_at", "2016-05-02 15:28:37.535078"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "cielo.mitchell"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.539257"], ["updated_at", "2016-05-02 15:28:37.539257"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "alf"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.542760"], ["updated_at", "2016-05-02 15:28:37.542760"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "don"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.546040"], ["updated_at", "2016-05-02 15:28:37.546040"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "otto.ortiz"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.549997"], ["updated_at", "2016-05-02 15:28:37.549997"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "lennie"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.553329"], ["updated_at", "2016-05-02 15:28:37.553329"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "lou"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.556840"], ["updated_at", "2016-05-02 15:28:37.556840"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "christine.schroeder"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.560123"], ["updated_at", "2016-05-02 15:28:37.560123"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "esther"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.563967"], ["updated_at", "2016-05-02 15:28:37.563967"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "cordia_walker"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.567558"], ["updated_at", "2016-05-02 15:28:37.567558"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "reina.jerde"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.572187"], ["updated_at", "2016-05-02 15:28:37.572187"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "graham.schinner"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.576051"], ["updated_at", "2016-05-02 15:28:37.576051"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "hayden.mayer"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.578916"], ["updated_at", "2016-05-02 15:28:37.578916"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "bernie"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.583359"], ["updated_at", "2016-05-02 15:28:37.583359"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "jordyn"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.586842"], ["updated_at", "2016-05-02 15:28:37.586842"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "afton"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.589977"], ["updated_at", "2016-05-02 15:28:37.589977"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "niko"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.593473"], ["updated_at", "2016-05-02 15:28:37.593473"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ethel"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.597148"], ["updated_at", "2016-05-02 15:28:37.597148"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "pete"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.600863"], ["updated_at", "2016-05-02 15:28:37.600863"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ernie_corkery"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.603816"], ["updated_at", "2016-05-02 15:28:37.603816"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ludie"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.607271"], ["updated_at", "2016-05-02 15:28:37.607271"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "viviane.zboncak"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.610716"], ["updated_at", "2016-05-02 15:28:37.610716"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "roman.langworth"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.613655"], ["updated_at", "2016-05-02 15:28:37.613655"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jacques.hartmann"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.617400"], ["updated_at", "2016-05-02 15:28:37.617400"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "harrison_cormier"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.621141"], ["updated_at", "2016-05-02 15:28:37.621141"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "serena.lehner"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.623957"], ["updated_at", "2016-05-02 15:28:37.623957"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "carleton.daniel"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.627391"], ["updated_at", "2016-05-02 15:28:37.627391"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "kevon"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.631160"], ["updated_at", "2016-05-02 15:28:37.631160"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "donald.fadel"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.634532"], ["updated_at", "2016-05-02 15:28:37.634532"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "theresia_roob"], ["gender", "male"], ["created_at", "2016-05-02 15:28:37.638596"], ["updated_at", "2016-05-02 15:28:37.638596"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "aisha"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.642695"], ["updated_at", "2016-05-02 15:28:37.642695"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "arnulfo.gorczany"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.645994"], ["updated_at", "2016-05-02 15:28:37.645994"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "shawna"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.650154"], ["updated_at", "2016-05-02 15:28:37.650154"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tabitha"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.654042"], ["updated_at", "2016-05-02 15:28:37.654042"]]
+  [1m[35m (25.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ted"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.681568"], ["updated_at", "2016-05-02 15:28:37.681568"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "foster"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.685973"], ["updated_at", "2016-05-02 15:28:37.685973"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "kristina.pfannerstill"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.690059"], ["updated_at", "2016-05-02 15:28:37.690059"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "audreanne"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.694097"], ["updated_at", "2016-05-02 15:28:37.694097"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "sanford.parisian"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.698534"], ["updated_at", "2016-05-02 15:28:37.698534"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jordi_toy"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.703711"], ["updated_at", "2016-05-02 15:28:37.703711"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "letitia"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.707375"], ["updated_at", "2016-05-02 15:28:37.707375"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "verla"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.711833"], ["updated_at", "2016-05-02 15:28:37.711833"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "fredrick.zulauf"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.715193"], ["updated_at", "2016-05-02 15:28:37.715193"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "sophia_lockman"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.718603"], ["updated_at", "2016-05-02 15:28:37.718603"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "bennie_tromp"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.722420"], ["updated_at", "2016-05-02 15:28:37.722420"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "darrel_aufderhar"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.726798"], ["updated_at", "2016-05-02 15:28:37.726798"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "alta.dietrich"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.731118"], ["updated_at", "2016-05-02 15:28:37.731118"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "roberto.wehner"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.735905"], ["updated_at", "2016-05-02 15:28:37.735905"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "marlin.cremin"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.739872"], ["updated_at", "2016-05-02 15:28:37.739872"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "newell"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.743337"], ["updated_at", "2016-05-02 15:28:37.743337"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "moises"], ["gender", "female"], ["created_at", "2016-05-02 15:28:37.748377"], ["updated_at", "2016-05-02 15:28:37.748377"]]
+  [1m[36m (267.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "tito"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.017887"], ["updated_at", "2016-05-02 15:28:38.017887"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "francisca_feest"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.022048"], ["updated_at", "2016-05-02 15:28:38.022048"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "judah"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.026482"], ["updated_at", "2016-05-02 15:28:38.026482"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "keven_bins"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.030479"], ["updated_at", "2016-05-02 15:28:38.030479"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "angela"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.033513"], ["updated_at", "2016-05-02 15:28:38.033513"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "afton.crona"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.036941"], ["updated_at", "2016-05-02 15:28:38.036941"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ibrahim.okuneva"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.039793"], ["updated_at", "2016-05-02 15:28:38.039793"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "philip_miller"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.042544"], ["updated_at", "2016-05-02 15:28:38.042544"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "mozelle"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.045192"], ["updated_at", "2016-05-02 15:28:38.045192"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "sincere_lueilwitz"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.049479"], ["updated_at", "2016-05-02 15:28:38.049479"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "micah.cormier"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.052385"], ["updated_at", "2016-05-02 15:28:38.052385"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "samara"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.056162"], ["updated_at", "2016-05-02 15:28:38.056162"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "jameson"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.059326"], ["updated_at", "2016-05-02 15:28:38.059326"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (7.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "marcella"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.069604"], ["updated_at", "2016-05-02 15:28:38.069604"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "george"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.072395"], ["updated_at", "2016-05-02 15:28:38.072395"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "melba"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.074919"], ["updated_at", "2016-05-02 15:28:38.074919"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "amani"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.077396"], ["updated_at", "2016-05-02 15:28:38.077396"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "katharina"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.079809"], ["updated_at", "2016-05-02 15:28:38.079809"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "wilfrid.satterfield"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.082303"], ["updated_at", "2016-05-02 15:28:38.082303"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "cleveland"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.084862"], ["updated_at", "2016-05-02 15:28:38.084862"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "milton"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.086988"], ["updated_at", "2016-05-02 15:28:38.086988"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "lesley"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.089221"], ["updated_at", "2016-05-02 15:28:38.089221"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "leone_keler"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.091784"], ["updated_at", "2016-05-02 15:28:38.091784"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "vicenta.hoeger"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.094134"], ["updated_at", "2016-05-02 15:28:38.094134"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "sanford"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.097052"], ["updated_at", "2016-05-02 15:28:38.097052"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "lincoln_pfannerstill"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.099837"], ["updated_at", "2016-05-02 15:28:38.099837"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "kelsie.koepp"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.102912"], ["updated_at", "2016-05-02 15:28:38.102912"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ellsworth.corwin"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.105170"], ["updated_at", "2016-05-02 15:28:38.105170"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "bartholome_von"], ["gender", "female"], ["created_at", "2016-05-02 15:28:38.108089"], ["updated_at", "2016-05-02 15:28:38.108089"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started GET "/character" for ::1 at 2016-05-02 11:28:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CharactersController#index as HTML
+  [1m[35mCharacter Load (0.6ms)[0m  SELECT "characters".* FROM "characters"
+Completed 200 OK in 46ms (Views: 29.0ms | ActiveRecord: 0.9ms)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (19.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (9.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCharacters (20160502153602)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "creator" varchar, "win" integer, "lose" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseTokenAuthCreateUsers (20160502142544)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/mal/Desktop/mal-test-box/p3/Mob-maker/db/migrate/20160502142544_devise_token_auth_create_users.rb:45)
+  [1m[35m (0.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar DEFAULT 'email' NOT NULL, "uid" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "name" varchar, "nickname" varchar, "image" varchar, "email" varchar, "tokens" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_uid_and_provider" ON "users" ("uid", "provider")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160502142544"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to CreateCharacters (20160502153602)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "creator" varchar, "win" integer, "lose" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160502153602"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (23.5ms)[0m  DELETE FROM "characters"
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (23.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (23.6ms)[0m  DELETE FROM "characters"
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseTokenAuthCreateUsers (20160502142544)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/mal/Desktop/mal-test-box/p3/Mob-maker/db/migrate/20160502142544_devise_token_auth_create_users.rb:45)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar DEFAULT 'email' NOT NULL, "uid" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "name" varchar, "nickname" varchar, "image" varchar, "email" varchar, "tokens" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_uid_and_provider" ON "users" ("uid", "provider")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160502142544"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Migrating to CreateCharacters (20160502153602)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "creator" varchar, "win" integer, "lose" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160502153602"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_uid_and_provider' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM "characters"
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (69.1ms)[0m  DELETE FROM "characters"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "porter"], ["gender", "male"], ["creator", "Issac Hyatt"], ["win", 5], ["lose", 17], ["created_at", "2016-05-02 15:54:54.221987"], ["updated_at", "2016-05-02 15:54:54.221987"]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "kylee_flatley"], ["gender", "male"], ["creator", "Candido Cartwright Sr."], ["win", 19], ["lose", 7], ["created_at", "2016-05-02 15:54:54.264940"], ["updated_at", "2016-05-02 15:54:54.264940"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "kole_kirlin"], ["gender", "male"], ["creator", "Cloyd Doyle"], ["win", 12], ["lose", 10], ["created_at", "2016-05-02 15:54:54.268462"], ["updated_at", "2016-05-02 15:54:54.268462"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "delaney.cain"], ["gender", "male"], ["creator", "Hellen Harvey"], ["win", 8], ["lose", 10], ["created_at", "2016-05-02 15:54:54.271818"], ["updated_at", "2016-05-02 15:54:54.271818"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "cale.yost"], ["gender", "male"], ["creator", "Myriam Kulas"], ["win", 8], ["lose", 9], ["created_at", "2016-05-02 15:54:54.274991"], ["updated_at", "2016-05-02 15:54:54.274991"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "weldon.haag"], ["gender", "male"], ["creator", "Karley Yost"], ["win", 5], ["lose", 2], ["created_at", "2016-05-02 15:54:54.277896"], ["updated_at", "2016-05-02 15:54:54.277896"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "onie.bins"], ["gender", "male"], ["creator", "Shaniya Stamm"], ["win", 19], ["lose", 20], ["created_at", "2016-05-02 15:54:54.281273"], ["updated_at", "2016-05-02 15:54:54.281273"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "desmond.herman"], ["gender", "male"], ["creator", "Guillermo Gutkowski Jr."], ["win", 4], ["lose", 5], ["created_at", "2016-05-02 15:54:54.284463"], ["updated_at", "2016-05-02 15:54:54.284463"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "hazel"], ["gender", "male"], ["creator", "Cara Mertz"], ["win", 12], ["lose", 17], ["created_at", "2016-05-02 15:54:54.287856"], ["updated_at", "2016-05-02 15:54:54.287856"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "pansy"], ["gender", "male"], ["creator", "Macie Lowe"], ["win", 8], ["lose", 9], ["created_at", "2016-05-02 15:54:54.291089"], ["updated_at", "2016-05-02 15:54:54.291089"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "michael_cole"], ["gender", "male"], ["creator", "Russel Sauer Sr."], ["win", 12], ["lose", 7], ["created_at", "2016-05-02 15:54:54.294115"], ["updated_at", "2016-05-02 15:54:54.294115"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "anya_lang"], ["gender", "male"], ["creator", "Ms. Ruthe Volkman"], ["win", 15], ["lose", 12], ["created_at", "2016-05-02 15:54:54.297527"], ["updated_at", "2016-05-02 15:54:54.297527"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "marlin"], ["gender", "male"], ["creator", "London Aufderhar"], ["win", 13], ["lose", 19], ["created_at", "2016-05-02 15:54:54.300614"], ["updated_at", "2016-05-02 15:54:54.300614"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "trent"], ["gender", "male"], ["creator", "Madeline Franecki"], ["win", 8], ["lose", 6], ["created_at", "2016-05-02 15:54:54.304527"], ["updated_at", "2016-05-02 15:54:54.304527"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "kali"], ["gender", "male"], ["creator", "Kenneth Goodwin"], ["win", 16], ["lose", 17], ["created_at", "2016-05-02 15:54:54.308764"], ["updated_at", "2016-05-02 15:54:54.308764"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "bertrand"], ["gender", "male"], ["creator", "Ryleigh Kirlin"], ["win", 7], ["lose", 16], ["created_at", "2016-05-02 15:54:54.313167"], ["updated_at", "2016-05-02 15:54:54.313167"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "wava"], ["gender", "male"], ["creator", "Lue Jast"], ["win", 5], ["lose", 1], ["created_at", "2016-05-02 15:54:54.317116"], ["updated_at", "2016-05-02 15:54:54.317116"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "theresia"], ["gender", "male"], ["creator", "Assunta Fay MD"], ["win", 1], ["lose", 9], ["created_at", "2016-05-02 15:54:54.320958"], ["updated_at", "2016-05-02 15:54:54.320958"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "lillie"], ["gender", "male"], ["creator", "Ms. Birdie Rau"], ["win", 7], ["lose", 14], ["created_at", "2016-05-02 15:54:54.325613"], ["updated_at", "2016-05-02 15:54:54.325613"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "albina_wehner"], ["gender", "male"], ["creator", "Sydnie Vandervort"], ["win", 15], ["lose", 1], ["created_at", "2016-05-02 15:54:54.329198"], ["updated_at", "2016-05-02 15:54:54.329198"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "mallie.erdman"], ["gender", "male"], ["creator", "Odie Ratke"], ["win", 14], ["lose", 16], ["created_at", "2016-05-02 15:54:54.332920"], ["updated_at", "2016-05-02 15:54:54.332920"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "adele"], ["gender", "male"], ["creator", "Eleanore Krajcik"], ["win", 1], ["lose", 15], ["created_at", "2016-05-02 15:54:54.337951"], ["updated_at", "2016-05-02 15:54:54.337951"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "marjorie_stracke"], ["gender", "male"], ["creator", "Miss Jordy Moen"], ["win", 8], ["lose", 12], ["created_at", "2016-05-02 15:54:54.341610"], ["updated_at", "2016-05-02 15:54:54.341610"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "gabe.fay"], ["gender", "male"], ["creator", "Arvel Pfannerstill"], ["win", 3], ["lose", 18], ["created_at", "2016-05-02 15:54:54.345495"], ["updated_at", "2016-05-02 15:54:54.345495"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "jo.kiehn"], ["gender", "male"], ["creator", "Vallie Brekke"], ["win", 6], ["lose", 4], ["created_at", "2016-05-02 15:54:54.349588"], ["updated_at", "2016-05-02 15:54:54.349588"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "claud"], ["gender", "male"], ["creator", "Cary Rempel"], ["win", 17], ["lose", 11], ["created_at", "2016-05-02 15:54:54.353989"], ["updated_at", "2016-05-02 15:54:54.353989"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "ariel.rutherford"], ["gender", "male"], ["creator", "Gay Gusikowski III"], ["win", 1], ["lose", 12], ["created_at", "2016-05-02 15:54:54.357905"], ["updated_at", "2016-05-02 15:54:54.357905"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "everette"], ["gender", "male"], ["creator", "Carmen Mayer DDS"], ["win", 6], ["lose", 20], ["created_at", "2016-05-02 15:54:54.361203"], ["updated_at", "2016-05-02 15:54:54.361203"]]
+  [1m[35m (29.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "elwin.gibson"], ["gender", "male"], ["creator", "Ayla Schoen"], ["win", 18], ["lose", 12], ["created_at", "2016-05-02 15:54:54.393411"], ["updated_at", "2016-05-02 15:54:54.393411"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "hollie.witting"], ["gender", "male"], ["creator", "Albertha Keebler"], ["win", 17], ["lose", 15], ["created_at", "2016-05-02 15:54:54.398215"], ["updated_at", "2016-05-02 15:54:54.398215"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "chelsea"], ["gender", "male"], ["creator", "Neoma Bode"], ["win", 13], ["lose", 10], ["created_at", "2016-05-02 15:54:54.402179"], ["updated_at", "2016-05-02 15:54:54.402179"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "breanna"], ["gender", "male"], ["creator", "Amani Runolfsdottir"], ["win", 11], ["lose", 12], ["created_at", "2016-05-02 15:54:54.405794"], ["updated_at", "2016-05-02 15:54:54.405794"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "emmett_heathcote"], ["gender", "male"], ["creator", "Mr. Enrico Hahn"], ["win", 13], ["lose", 4], ["created_at", "2016-05-02 15:54:54.409253"], ["updated_at", "2016-05-02 15:54:54.409253"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "eva_dibbert"], ["gender", "male"], ["creator", "Vella Rempel"], ["win", 16], ["lose", 15], ["created_at", "2016-05-02 15:54:54.412619"], ["updated_at", "2016-05-02 15:54:54.412619"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "tina"], ["gender", "male"], ["creator", "Candido Farrell"], ["win", 13], ["lose", 14], ["created_at", "2016-05-02 15:54:54.416469"], ["updated_at", "2016-05-02 15:54:54.416469"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "althea_glover"], ["gender", "male"], ["creator", "Mohammad Skiles"], ["win", 19], ["lose", 11], ["created_at", "2016-05-02 15:54:54.420040"], ["updated_at", "2016-05-02 15:54:54.420040"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "leif.metz"], ["gender", "male"], ["creator", "Miss Talia Okuneva"], ["win", 2], ["lose", 10], ["created_at", "2016-05-02 15:54:54.423721"], ["updated_at", "2016-05-02 15:54:54.423721"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "carlo_harvey"], ["gender", "male"], ["creator", "Alisa Hahn"], ["win", 4], ["lose", 11], ["created_at", "2016-05-02 15:54:54.427426"], ["updated_at", "2016-05-02 15:54:54.427426"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "william"], ["gender", "male"], ["creator", "Marjorie MacGyver"], ["win", 8], ["lose", 6], ["created_at", "2016-05-02 15:54:54.430976"], ["updated_at", "2016-05-02 15:54:54.430976"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "duane_padberg"], ["gender", "male"], ["creator", "Margarett Walter"], ["win", 14], ["lose", 14], ["created_at", "2016-05-02 15:54:54.435741"], ["updated_at", "2016-05-02 15:54:54.435741"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "jefferey.hauck"], ["gender", "male"], ["creator", "Ari Kreiger PhD"], ["win", 9], ["lose", 15], ["created_at", "2016-05-02 15:54:54.439711"], ["updated_at", "2016-05-02 15:54:54.439711"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "norval"], ["gender", "male"], ["creator", "Samson MacGyver"], ["win", 17], ["lose", 13], ["created_at", "2016-05-02 15:54:54.443771"], ["updated_at", "2016-05-02 15:54:54.443771"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "rory"], ["gender", "male"], ["creator", "Tressa Murphy I"], ["win", 14], ["lose", 10], ["created_at", "2016-05-02 15:54:54.447818"], ["updated_at", "2016-05-02 15:54:54.447818"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "darrel"], ["gender", "male"], ["creator", "Eloy Langosh PhD"], ["win", 17], ["lose", 19], ["created_at", "2016-05-02 15:54:54.451631"], ["updated_at", "2016-05-02 15:54:54.451631"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "dennis"], ["gender", "male"], ["creator", "Ms. Deon Keeling"], ["win", 11], ["lose", 2], ["created_at", "2016-05-02 15:54:54.455887"], ["updated_at", "2016-05-02 15:54:54.455887"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "rosalyn"], ["gender", "male"], ["creator", "Godfrey Koss"], ["win", 2], ["lose", 18], ["created_at", "2016-05-02 15:54:54.460123"], ["updated_at", "2016-05-02 15:54:54.460123"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "burdette_streich"], ["gender", "male"], ["creator", "Jon Kiehn"], ["win", 11], ["lose", 15], ["created_at", "2016-05-02 15:54:54.463648"], ["updated_at", "2016-05-02 15:54:54.463648"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "vella.buckridge"], ["gender", "male"], ["creator", "Una Waelchi"], ["win", 19], ["lose", 17], ["created_at", "2016-05-02 15:54:54.467806"], ["updated_at", "2016-05-02 15:54:54.467806"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "joanie"], ["gender", "male"], ["creator", "Fae Quigley"], ["win", 3], ["lose", 5], ["created_at", "2016-05-02 15:54:54.471398"], ["updated_at", "2016-05-02 15:54:54.471398"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "randy"], ["gender", "male"], ["creator", "Mrs. Clark Tremblay"], ["win", 20], ["lose", 3], ["created_at", "2016-05-02 15:54:54.475001"], ["updated_at", "2016-05-02 15:54:54.475001"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "tod_windler"], ["gender", "female"], ["creator", "Magnolia Vandervort"], ["win", 5], ["lose", 3], ["created_at", "2016-05-02 15:54:54.478877"], ["updated_at", "2016-05-02 15:54:54.478877"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "claudia"], ["gender", "female"], ["creator", "Karen White"], ["win", 5], ["lose", 9], ["created_at", "2016-05-02 15:54:54.483176"], ["updated_at", "2016-05-02 15:54:54.483176"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "elizabeth"], ["gender", "female"], ["creator", "Dr. Lowell Herman"], ["win", 3], ["lose", 16], ["created_at", "2016-05-02 15:54:54.488120"], ["updated_at", "2016-05-02 15:54:54.488120"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "casper.douglas"], ["gender", "female"], ["creator", "Bradford Waters"], ["win", 4], ["lose", 16], ["created_at", "2016-05-02 15:54:54.491935"], ["updated_at", "2016-05-02 15:54:54.491935"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "tyrel_rogahn"], ["gender", "female"], ["creator", "Kariane Auer"], ["win", 1], ["lose", 14], ["created_at", "2016-05-02 15:54:54.495796"], ["updated_at", "2016-05-02 15:54:54.495796"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "giovanni"], ["gender", "female"], ["creator", "Ollie Strosin"], ["win", 10], ["lose", 14], ["created_at", "2016-05-02 15:54:54.499271"], ["updated_at", "2016-05-02 15:54:54.499271"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "isabelle"], ["gender", "female"], ["creator", "Lou Ziemann"], ["win", 18], ["lose", 14], ["created_at", "2016-05-02 15:54:54.503193"], ["updated_at", "2016-05-02 15:54:54.503193"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "amya"], ["gender", "female"], ["creator", "Wilton Strosin"], ["win", 6], ["lose", 3], ["created_at", "2016-05-02 15:54:54.507307"], ["updated_at", "2016-05-02 15:54:54.507307"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "savanah"], ["gender", "female"], ["creator", "Katharina Konopelski"], ["win", 9], ["lose", 20], ["created_at", "2016-05-02 15:54:54.510678"], ["updated_at", "2016-05-02 15:54:54.510678"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "filiberto"], ["gender", "female"], ["creator", "Amaya Rice"], ["win", 7], ["lose", 10], ["created_at", "2016-05-02 15:54:54.515044"], ["updated_at", "2016-05-02 15:54:54.515044"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "shanna"], ["gender", "female"], ["creator", "Hillary Schultz"], ["win", 19], ["lose", 10], ["created_at", "2016-05-02 15:54:54.518841"], ["updated_at", "2016-05-02 15:54:54.518841"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "baylee"], ["gender", "female"], ["creator", "Charlene Roberts"], ["win", 18], ["lose", 7], ["created_at", "2016-05-02 15:54:54.523199"], ["updated_at", "2016-05-02 15:54:54.523199"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "aurelie"], ["gender", "female"], ["creator", "Marcus Maggio"], ["win", 7], ["lose", 13], ["created_at", "2016-05-02 15:54:54.526997"], ["updated_at", "2016-05-02 15:54:54.526997"]]
+  [1m[36m (36.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "alexandra_bayer"], ["gender", "female"], ["creator", "Antwan Lockman"], ["win", 13], ["lose", 14], ["created_at", "2016-05-02 15:54:54.573636"], ["updated_at", "2016-05-02 15:54:54.573636"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "itzel.krajcik"], ["gender", "female"], ["creator", "Kenneth Mayert"], ["win", 14], ["lose", 8], ["created_at", "2016-05-02 15:54:54.577437"], ["updated_at", "2016-05-02 15:54:54.577437"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "seth"], ["gender", "female"], ["creator", "Bridget Heidenreich"], ["win", 15], ["lose", 11], ["created_at", "2016-05-02 15:54:54.580784"], ["updated_at", "2016-05-02 15:54:54.580784"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "jeyca_stark"], ["gender", "female"], ["creator", "Mr. Nina McCullough"], ["win", 5], ["lose", 1], ["created_at", "2016-05-02 15:54:54.584783"], ["updated_at", "2016-05-02 15:54:54.584783"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "jordan"], ["gender", "female"], ["creator", "Eryn Altenwerth"], ["win", 3], ["lose", 11], ["created_at", "2016-05-02 15:54:54.587991"], ["updated_at", "2016-05-02 15:54:54.587991"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "je_jones"], ["gender", "female"], ["creator", "Liza Anderson"], ["win", 14], ["lose", 15], ["created_at", "2016-05-02 15:54:54.590955"], ["updated_at", "2016-05-02 15:54:54.590955"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "celia"], ["gender", "female"], ["creator", "Kennedi Hilpert"], ["win", 12], ["lose", 17], ["created_at", "2016-05-02 15:54:54.595502"], ["updated_at", "2016-05-02 15:54:54.595502"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "eloise.smitham"], ["gender", "female"], ["creator", "Nicola Kertzmann"], ["win", 2], ["lose", 9], ["created_at", "2016-05-02 15:54:54.599734"], ["updated_at", "2016-05-02 15:54:54.599734"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "ora.pacocha"], ["gender", "female"], ["creator", "Ariane Mosciski"], ["win", 20], ["lose", 20], ["created_at", "2016-05-02 15:54:54.603060"], ["updated_at", "2016-05-02 15:54:54.603060"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "preston_stracke"], ["gender", "female"], ["creator", "Eloy Leannon PhD"], ["win", 10], ["lose", 14], ["created_at", "2016-05-02 15:54:54.606126"], ["updated_at", "2016-05-02 15:54:54.606126"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "lora_cormier"], ["gender", "female"], ["creator", "Kelsi Boyer"], ["win", 13], ["lose", 12], ["created_at", "2016-05-02 15:54:54.609193"], ["updated_at", "2016-05-02 15:54:54.609193"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "robb"], ["gender", "female"], ["creator", "Kelton Stark"], ["win", 6], ["lose", 9], ["created_at", "2016-05-02 15:54:54.612653"], ["updated_at", "2016-05-02 15:54:54.612653"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "myrtle"], ["gender", "female"], ["creator", "Clint Cartwright"], ["win", 12], ["lose", 9], ["created_at", "2016-05-02 15:54:54.616526"], ["updated_at", "2016-05-02 15:54:54.616526"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "kirk_balistreri"], ["gender", "female"], ["creator", "Bettie Zboncak"], ["win", 13], ["lose", 1], ["created_at", "2016-05-02 15:54:54.619853"], ["updated_at", "2016-05-02 15:54:54.619853"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "dashawn_grimes"], ["gender", "female"], ["creator", "Dean Marks"], ["win", 12], ["lose", 3], ["created_at", "2016-05-02 15:54:54.623714"], ["updated_at", "2016-05-02 15:54:54.623714"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "chadrick_renner"], ["gender", "female"], ["creator", "Madge Barton Jr."], ["win", 7], ["lose", 20], ["created_at", "2016-05-02 15:54:54.626682"], ["updated_at", "2016-05-02 15:54:54.626682"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "andreanne.borer"], ["gender", "female"], ["creator", "Hoyt Kilback"], ["win", 2], ["lose", 6], ["created_at", "2016-05-02 15:54:54.629788"], ["updated_at", "2016-05-02 15:54:54.629788"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "rosa"], ["gender", "female"], ["creator", "Mr. Quinten Nitzsche"], ["win", 6], ["lose", 8], ["created_at", "2016-05-02 15:54:54.633530"], ["updated_at", "2016-05-02 15:54:54.633530"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "gianni_powlowski"], ["gender", "female"], ["creator", "Princess Volkman I"], ["win", 1], ["lose", 13], ["created_at", "2016-05-02 15:54:54.636784"], ["updated_at", "2016-05-02 15:54:54.636784"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "mckenna"], ["gender", "female"], ["creator", "Dock Douglas"], ["win", 15], ["lose", 17], ["created_at", "2016-05-02 15:54:54.639925"], ["updated_at", "2016-05-02 15:54:54.639925"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "brycen"], ["gender", "female"], ["creator", "Mr. Dannie Spinka"], ["win", 17], ["lose", 1], ["created_at", "2016-05-02 15:54:54.643655"], ["updated_at", "2016-05-02 15:54:54.643655"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "nicholaus.moore"], ["gender", "female"], ["creator", "Margret Stamm"], ["win", 5], ["lose", 19], ["created_at", "2016-05-02 15:54:54.647347"], ["updated_at", "2016-05-02 15:54:54.647347"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "brian"], ["gender", "female"], ["creator", "Chet Schultz"], ["win", 14], ["lose", 18], ["created_at", "2016-05-02 15:54:54.650626"], ["updated_at", "2016-05-02 15:54:54.650626"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "tamara.fritsch"], ["gender", "female"], ["creator", "Giles Schmeler"], ["win", 9], ["lose", 15], ["created_at", "2016-05-02 15:54:54.654808"], ["updated_at", "2016-05-02 15:54:54.654808"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "novella.wintheiser"], ["gender", "female"], ["creator", "Wilson Howe"], ["win", 13], ["lose", 2], ["created_at", "2016-05-02 15:54:54.657691"], ["updated_at", "2016-05-02 15:54:54.657691"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "name"], ["gender", "female"], ["creator", "Harvey Kemmer DVM"], ["win", 11], ["lose", 13], ["created_at", "2016-05-02 15:54:54.661161"], ["updated_at", "2016-05-02 15:54:54.661161"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "delpha_wilkinson"], ["gender", "female"], ["creator", "Marcellus Auer"], ["win", 4], ["lose", 4], ["created_at", "2016-05-02 15:54:54.663955"], ["updated_at", "2016-05-02 15:54:54.663955"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "nya"], ["gender", "female"], ["creator", "Margaret Stroman"], ["win", 7], ["lose", 10], ["created_at", "2016-05-02 15:54:54.667019"], ["updated_at", "2016-05-02 15:54:54.667019"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "gerald"], ["gender", "female"], ["creator", "Jovan Hermann"], ["win", 12], ["lose", 15], ["created_at", "2016-05-02 15:54:54.670240"], ["updated_at", "2016-05-02 15:54:54.670240"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "kurtis"], ["gender", "female"], ["creator", "Rhett Parisian"], ["win", 9], ["lose", 10], ["created_at", "2016-05-02 15:54:54.673309"], ["updated_at", "2016-05-02 15:54:54.673309"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "shemar_heaney"], ["gender", "female"], ["creator", "Westley Herman"], ["win", 18], ["lose", 19], ["created_at", "2016-05-02 15:54:54.676149"], ["updated_at", "2016-05-02 15:54:54.676149"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "don_daniel"], ["gender", "female"], ["creator", "Tad Gislason"], ["win", 15], ["lose", 7], ["created_at", "2016-05-02 15:54:54.678986"], ["updated_at", "2016-05-02 15:54:54.678986"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "rubie"], ["gender", "female"], ["creator", "Aletha Becker"], ["win", 9], ["lose", 15], ["created_at", "2016-05-02 15:54:54.681985"], ["updated_at", "2016-05-02 15:54:54.681985"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "nash"], ["gender", "female"], ["creator", "Danny Schaden"], ["win", 20], ["lose", 19], ["created_at", "2016-05-02 15:54:54.685239"], ["updated_at", "2016-05-02 15:54:54.685239"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "aniya"], ["gender", "female"], ["creator", "Mr. Brandy Beatty"], ["win", 10], ["lose", 1], ["created_at", "2016-05-02 15:54:54.688009"], ["updated_at", "2016-05-02 15:54:54.688009"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "elian"], ["gender", "female"], ["creator", "Triston Fritsch"], ["win", 1], ["lose", 17], ["created_at", "2016-05-02 15:54:54.690891"], ["updated_at", "2016-05-02 15:54:54.690891"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "characters" ("name", "gender", "creator", "win", "lose", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "reva_hand"], ["gender", "female"], ["creator", "Miss Marcia Schamberger"], ["win", 5], ["lose", 10], ["created_at", "2016-05-02 15:54:54.693694"], ["updated_at", "2016-05-02 15:54:54.693694"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
+
+
+Started GET "/character" for ::1 at 2016-05-02 11:55:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (18.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CharactersController#index as HTML
+  [1m[35mCharacter Load (20.4ms)[0m  SELECT "characters".* FROM "characters"
+Completed 200 OK in 90ms (Views: 38.8ms | ActiveRecord: 20.8ms)
+DEPRECATION WARNING: [Devise] config.email_regexp will have a new default on Devise 4.1
+To keep the current behavior please set in your config/initializers/devise.rb the following:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@([^@\s]+\.)+[^@\W]+\z/
+  end
+
+If you want to use the new default:
+
+  Devise.setup do |config|
+    config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
+  end
+. (called from block in tsort_each at /Users/mal/.rbenv/versions/2.2.2/lib/ruby/2.2.0/tsort.rb:226)
